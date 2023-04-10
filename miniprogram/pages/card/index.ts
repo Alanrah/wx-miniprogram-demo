@@ -8,6 +8,13 @@ Page({
 
   },
 
+  goCardDetail(e: any) {
+      console.log(e.currentTarget?.dataset?.title)
+      wx.navigateTo({
+          url: `../card-detail/index?title=${e.currentTarget?.dataset?.title}`,
+      })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

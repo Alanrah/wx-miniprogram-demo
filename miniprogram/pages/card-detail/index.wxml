@@ -1,0 +1,2 @@
+<!--pages/card-detail/index.wxml-->
+<text>{{ cardTitle }}</text>

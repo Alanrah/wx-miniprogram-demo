@@ -1,7 +1,7 @@
 // index.ts
 // 获取应用实例
 const app = getApp<IAppOption>()
-
+// 注意： wx.navigateTo  wx.redirectTo  需要跳转的应用内非 tabBar 的页面的路径
 Page({
   data: {
     motto: 'Hello World',
@@ -13,13 +13,12 @@ Page({
   },
   // 事件处理函数
   bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs',
+    wx.switchTab({
+      url: '../logs/logs', // 注意 路径后不能带参数
     })
   },
   goCard() {
-      console.log('goCard')
-    wx.navigateTo({
+    wx.switchTab({
       url: '../card/index',
     })
   },

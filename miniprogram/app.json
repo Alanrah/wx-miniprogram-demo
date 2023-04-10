@@ -1,42 +1,43 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/card/index"
-  ],
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/card/index",
-        "text": "卡片"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
-      }
-    ]
-  },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "requiredPrivateInfos": [
-    "getLocation",
-    "onLocationChange",
-    "startLocationUpdateBackground",
-    "chooseAddress"
-  ],
-  "permission": {
-    "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/card/index",
+        "pages/card-detail/index"
+    ],
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/card/index",
+                "text": "卡片"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "日志"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "requiredPrivateInfos": [
+        "getLocation",
+        "onLocationChange",
+        "startLocationUpdateBackground",
+        "chooseAddress"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
     }
-  }
 }
