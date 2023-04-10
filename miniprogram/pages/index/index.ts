@@ -17,6 +17,12 @@ Page({
       url: '../logs/logs',
     })
   },
+  goCard() {
+      console.log('goCard')
+    wx.navigateTo({
+      url: '../card/index',
+    })
+  },
   onLoad() {
     // @ts-ignore
     if (wx.getUserProfile) {

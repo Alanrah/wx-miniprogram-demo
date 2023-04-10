@@ -5,6 +5,7 @@
       <view class="userinfo-avatar" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
       </view>
+      <image src="../../assets/img/Songs.png" bindtap="goCard"></image>
       <open-data type="userNickName"></open-data>
     </block>
     <block wx:elif="{{!hasUserInfo}}">

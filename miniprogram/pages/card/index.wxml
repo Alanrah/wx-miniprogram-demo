@@ -1,2 +1,3 @@
 <!--pages/card/index.wxml-->
-<text>pages/card/index.wxml</text>
+<text>卡片</text>
+<image src="../../assets/img/Songs.png"></image>
