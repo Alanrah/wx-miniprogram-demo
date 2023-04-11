@@ -1,3 +1,6 @@
 <!--pages/card/index.wxml-->
-<text bindtap="goCardDetail" data-title="卡片名称">带着query去卡片想去页面看看</text>
-<image src="../../assets/img/Songs.png"></image>
+<view class="card">
+    <button class="detail" bindtap="goCardDetail" data-title="勇者无敌卡片" type="primary" size="mini">卡片详情</button>
+<image src="../../assets/img/banner.png"></image>
+</view>
+

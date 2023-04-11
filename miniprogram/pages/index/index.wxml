@@ -1,24 +1,33 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
+    <!-- <view class="usermotto">
+      <view class="userinfo">
+        <block wx:if="{{canIUseOpenData}}">
+          <view class="userinfo-avatar" bindtap="bindViewTap">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <open-data type="userNickName"></open-data>
+        </block>
+        <block wx:elif="{{!hasUserInfo}}">
+          <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+          <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+        </block>
+        <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
       </view>
-      <image src="../../assets/img/Songs.png" bindtap="goCard"></image>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
+    <image class="banner" src="../../assets/img/banner.png" bindtap="goCard"></image>
+    <text class="desc">
+        人才标准和人才理念又决定了你会挑什么样的人。每个单位的人力资源管理制度，包括管人的特点和风格，又跟我们的组织文化有关系。组织到底选取什么样的文化，跟高层管理者的价值观、使命感，以及个人的心态都有很大的关联。
+
+        如果你认为发展人才是第一位的，你对人的重视程度就会高。你就愿意不惜血本去挖人，招聘员工的待遇就会更高。如果你的员工很厉害，非常有价值，你在工作中对他们会有更多的尊重。
+        
+        所谓的群体，就是我们身边的那几个同事。团队对个人的影响，叫群体效应，比如组织架构、具体的行业方式、发展方向等，都会影响到员工的业绩。
+
+        2009年的时候，上市公司可能1000家左右，有经济学家做了一个分析，结果发现民营企业上市公司资产的净资产回报率是8.18%，国有企业只有3.05%。这个案例告诉我们，所有制形式基本上会影响到企业的效益。
+    </text>
 </view>

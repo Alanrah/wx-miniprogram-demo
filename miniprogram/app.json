@@ -23,8 +23,8 @@
     },
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
+        "navigationBarBackgroundColor": "#f0fbef",
+        "navigationBarTitleText": "卡片",
         "navigationBarTextStyle": "black"
     },
     "style": "v2",

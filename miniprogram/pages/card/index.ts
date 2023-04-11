@@ -9,9 +9,8 @@ Page({
   },
 
   goCardDetail(e: any) {
-      console.log(e.currentTarget?.dataset?.title)
       wx.navigateTo({
-          url: `../card-detail/index?title=${e.currentTarget?.dataset?.title}`,
+          url: `../card-detail/index?title=${e.currentTarget.dataset.title}`,
       })
   },
 
